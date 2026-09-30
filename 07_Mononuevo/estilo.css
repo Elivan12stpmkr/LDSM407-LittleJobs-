@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    background:#eee;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#spiderman{
+    position:relative;
+    width:350px;
+    height:600px;
+}
+
+
+#cabeza{
+    width:240px;
+    height:280px;
+    background:#d9232e;
+    border:3px solid #222;
+    border-radius:50%;
+    position:absolute;
+    left:55px;
+    top:20px;
+}
+
+
+
+.ojo{
+    width:55px;
+    height:90px;
+    background:white;
+    border:3px solid #222;
+    position:absolute;
+    top:85px;
+}
+
+.izquierdo{
+    left:45px;
+}
+
+.derecho{
+    right:45px;
+}
+
+
+#cuello{
+    width:80px;
+    height:70px;
+    background:#d9232e;
+    position:absolute;
+    left:135px;
+    top:270px;
+}
+
+
+#torso{
+    width:340px;
+    height:250px;
+    background:#d9232e;
+    border:3px solid #222;
+    border-radius:40% 40% 0 0;
+    position:absolute;
+    top:330px;
+    left:5px;
+}
+
+
+
+#arana{
+    width:30px;
+    height:70px;
+    background:#111;
+    border-radius:50%;
+    position:absolute;
+    top:50px;
+    left:152px;
+}
+
+#arana::before,
+#arana::after{
+    content:"";
+    width:70px;
+    height:12px;
+    background:#111;
+    position:absolute;
+    top:20px;
+    left:-20px;
+}
+
+#arana::after{
+    top:40px;
+}
